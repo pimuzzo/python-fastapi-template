@@ -9,7 +9,7 @@ Built to showcase best practices in Python backend development and serve as a so
 - 🔀 Routing with versioned endpoints
 - 📄 OpenAPI docs auto-generated (`/docs`, `/redoc`)
 - ✅ Data validation and typing with Pydantic v2
-- 🧪 Async-ready test setup with `pytest`, `httpx`, `pytest-asyncio` (in progress)
+- 🧪 Async-ready test setup with `pytest`, `httpx`, `pytest-asyncio`
 - 🐳 Minimal Docker support
 - 🧰 Designed as a reusable starter template
 

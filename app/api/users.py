@@ -1,4 +1,5 @@
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
+
 from app.models.user import User, UserCreate
 from app.services.user_service import save_user, get_all_users
 
