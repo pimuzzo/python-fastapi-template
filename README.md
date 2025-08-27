@@ -10,12 +10,12 @@ Built to showcase best practices in Python backend development and serve as a so
 - 📄 OpenAPI docs auto-generated (`/docs`, `/redoc`)
 - ✅ Data validation and typing with Pydantic v2
 - 🧪 Async-ready test setup with `pytest`, `httpx`, `pytest-asyncio` (in progress)
-- 🐳 Minimal Docker support (in progress)
+- 🐳 Minimal Docker support
 - 🧰 Designed as a reusable starter template
 
 ## 📦 Technologies
 
-- Python 3.11+
+- Python 3.13+
 - FastAPI
 - Uvicorn (ASGI server)
 - Pydantic v2
