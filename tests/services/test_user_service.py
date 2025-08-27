@@ -1,4 +1,5 @@
 import pytest
+
 from app.models.user import UserCreate
 from app.services.user_service import save_user, get_all_users
 
