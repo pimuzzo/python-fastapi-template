@@ -8,10 +8,18 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "uvicorn[standard] (>=0.35.0,<0.36.0)",
+    "pydantic[email] (>=2.11.7,<3.0.0)"
 ]
 
 [tool.poetry]
 packages = [{include = "app"}]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-asyncio = "^1.1.0"
+httpx = "^0.28.1"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
