@@ -1,0 +1,42 @@
+name: Python CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    name: Test and Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🧾 Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: 📦 Install Poetry
+        run: |
+          pip install poetry
+          poetry config virtualenvs.create false
+
+      - name: 📄 Install dependencies
+        run: poetry install --no-interaction --no-root
+
+      - name: ✅ Run tests
+        run: poetry run pytest -v
+
+      - name: 🧼 Check formatting
+        run: |
+          pip install black
+          black --check .
+
+      - name: 🔍 Lint with ruff
+        run: |
+          pip install ruff
+          ruff check .
