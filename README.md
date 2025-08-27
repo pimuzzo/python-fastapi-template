@@ -27,5 +27,5 @@ Built to showcase best practices in Python backend development and serve as a so
 poetry install
 
 # Run the development server
-poetry run uvicorn app.main:app --reload
+poetry run uvicorn app.main:app --reload --log-config=log_config.yml
 ```
