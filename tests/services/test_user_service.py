@@ -16,4 +16,4 @@ async def test_save_user():
 async def test_get_all_users_empty():
     users = await get_all_users()
     assert isinstance(users, list)
-    assert len(users) > 0
+    assert len(users) == 0
